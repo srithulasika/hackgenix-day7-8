@@ -1,0 +1,96 @@
+Day 8 | Part E: Bug Hunt Project
+
+function calculateTotal(items) {
+let total = 0
+for (let i = 0; i <= items.length; i++) {
+total += items[i].price * items.qty;
+}
+console.log(total);
+}
+const cart = [
+{ name: "Pen", price: 10, qty: 5 },
+{ name: "Book", price: 120, qty: 2 }
+{ name: "Bag", price: 750, qty: 1 },
+];
+let result = calculateTotal(cart);
+console.log("Total: " + result.toFixed(2));
+const names = cart.map(item => { item.name });
+const costly = cart.filter(item => item.price = 100);
+const sum = cart.reduce((s, item) => s + item.price);
+const sorted = cart.sort((a, b) => a.price > b.price);
+const bag = cart.find(item => item.name === "bag");
+const copy = cart;
+copy.push({ name: "Cap", price: 200, qty: 1 });
+const user = { name: "Asha", greet: () => console.log("Hi " + this.name) };
+user.greet;
+const data = JSON.parse("{name: 'Asha', age: 20}");
+let json = JSON.stringify(cart)
+console.log(json.length());
+console.log(cart[cart.length]);
+
+
+Bugs:
+
+Bug 1 – Missing comma
+
+I forgot to add a comma between the Book and Bag objects in the array.
+
+Bug 2 – Wrong loop condition
+
+I used <= instead of <. It tries to access an array index that does not exist.
+
+Bug 3 – Wrong quantity reference
+
+I used items.qty instead of items[i].qty to get the quantity of the current item.
+
+Bug 4 – Missing return statement
+
+I used console.log(total) instead of return total. So the function was not returning the calculated value.
+
+Bug 5 – Undefined result
+
+The result became undefined because the function was not returning anything. That's why toFixed() was not working.
+
+Bug 6 – Missing return in map()
+
+I used curly braces without writing return. So map was not returning the item names.
+
+Bug 7 – Assignment instead of comparison
+
+I used a single = instead of >=. It was changing the price instead of checking the condition.
+
+Bug 8 – Missing initial value in reduce()
+
+I forgot to give the starting value as 0 in the reduce method.
+
+Bug 9 – Wrong sorting logic
+
+I used > instead of returning a number. I used a.price - b.price to sort items in ascending order.
+
+Bug 10 – Case-sensitive comparison
+
+I searched for "bag" instead of "Bag". JavaScript treats uppercase and lowercase letters differently.
+
+Bug 11 – Same array reference
+
+I assigned cart directly to copy. Both variables were referring to the same array. I used the spread operator to create a separate array.
+
+Bug 12 – Wrong use of this
+
+I used an arrow function for the greet method. Arrow functions do not have their own this, so I changed it to a regular method.
+
+Bug 13 – Function not called
+
+I wrote user.greet without parentheses. We need user.greet() to call the function.
+
+Bug 14 – Invalid JSON format
+
+I used single quotes for the string value and did not use double quotes around the property names. JSON requires double quotes.
+
+Bug 15 – Wrong length usage
+
+I used json.length() like a function. But length is a property, so we should use json.length.
+
+Bug 16 – Wrong array index
+
+I used cart[cart.length], but that index does not exist. To get the last item, we should use cart.length - 1.
