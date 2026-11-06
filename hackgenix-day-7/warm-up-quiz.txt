@@ -1,0 +1,83 @@
+Day 7 | Part A: Warm-up Quiz (20 minutes)
+
+Choose one answer for each question. Write your answers on paper first, then look up the ones you are unsure about in Module 7.
+
+1. Which keyword declares a variable that cannot be reassigned?
+
+         Ans: (c) const
+
+2. What does typeof "5" return?
+
+         Ans: (b) string 
+
+3. Which is a valid variable name?
+
+         Ans:  (c) myName 
+
+4. What is the result of "5" + 2?
+
+         Ans:  (c) NaN 
+
+5. What is the result of "5" - 2?
+
+        Ans:  (c) NaN 
+
+6. Which operator checks both value and type?
+
+       Ans: (c) ===
+
+7. What is 7 % 3?
+
+       Ans: (b) 1 
+
+8. What type of value does prompt() return?
+
+      Ans: (c) string 
+
+9. Which of these is falsy?
+
+      Ans: (c) 0
+
+10. What is 2 ** 3?
+
+      Ans: (b) 8
+
+11. What does typeof null return?
+
+      Ans: (c) object 
+
+12. Which loop always runs at least once?
+
+      Ans: (c) do...while 
+
+13. What does break do inside a loop?
+
+      Ans: (b) Leaves the loop completely 
+
+14. What does continue do inside a loop?
+
+      Ans: (b) Skips the rest of this round and goes to the next 
+
+15. Which statement writes a message to the Console?
+
+      Ans: (c) console.log()
+
+16. What is x after: let x = 5; x += 3;
+
+       Ans: (c) 8 
+
+17. What does condition ? a : b do?
+
+       Ans: (b) Returns a if the condition is true, otherwise b 
+
+18. Which loop prints 1 2 3?
+
+       Ans: (b) for (let i = 1; i <= 3; i++) 
+
+19. Where is a script tag with src normally placed?
+
+       Ans: (b) Just before the closing body tag 
+
+20. What is NaN?
+
+       Ans: (b) A special number value meaning Not a Number

@@ -1,0 +1,97 @@
+Day 7 | Part E: Bug Hunt Project
+
+
+let Price = 500
+const quantity = 3;
+let discount;
+if (quantity = 3) {
+discount = 0.1;
+}
+let total = Price * quantity - discount;
+console.log("Total is " + total.toFixed(2);
+for (let i = 1; i <= 3; i++);
+{
+console.log(i);
+}
+let count = 0;
+while (count < 3) {
+console.log("Round " + count);
+}
+switch (grade) {
+case "A": console.log("Excellent");
+case "B": console.log("Good"); break;
+defualt: console.log("Try again");
+}
+let age = prompt("Age?");
+if (age > 17 && < 60) { console.log("Eligible"); }
+console.log(Math.Random());
+let 2ndName = "Ravi";
+let user = 'Asha";
+const PI = 3.14;
+PI = 3.14159;
+
+
+
+Bug Hunt 7 – Bug Explanations
+
+1. Syntax Errors
+
+1. Missing closing bracket
+
+The 'console.log()' statement is missing a closing bracket. We need to add ')' at the end.
+
+2. Invalid variable name
+
+A variable name cannot start with a number. So, we changed '2ndName' to 'secondName'.
+
+3. Mismatched quotation marks
+
+We used different quotation marks at the beginning and end. We should use the same quotation marks.
+
+4. Wrong spelling of default
+
+We misspelled 'default' as 'defualt'. We corrected the spelling.
+
+5. Incorrect age condition
+
+We forgot to mention the variable name in the second condition. We should write 'age < 60'.
+
+ 2. Logic Errors
+
+6. Wrong comparison operator
+
+We used '=' instead of '==='. A single '=' is used to assign a value, while '===' is used to compare values.
+
+7. Incorrect discount calculation
+
+We are subtracting only '0.1' from the total. We need to calculate 10% of the subtotal first.
+
+8. Extra semicolon in for loop
+
+There is an extra semicolon after the for loop. Because of this, the loop body will not execute as expected.
+
+9. Infinite while loop
+
+We did not increase the count value inside the loop. So, the loop keeps running. We need to use 'count++'.
+
+10. Missing break statement
+
+The first case in the switch statement does not have a 'break'. So the next case will also execute.
+
+3. Other Errors
+
+11. Grade variable is missing
+
+We used 'grade' in the switch statement, but we did not declare or assign a value to it.
+
+12. Wrong Math method name
+
+We used 'Math.Random()', but the correct method is 'Math.random()'. JavaScript is case-sensitive.
+
+13. Age type conversion
+
+The 'prompt()' function returns the input as a string. So we used 'Number()' to convert it into a number.
+
+14. Const reassignment
+
+We cannot change the value of a variable declared using 'const'. So we removed the reassignment of PI.
